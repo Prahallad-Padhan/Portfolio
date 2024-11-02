@@ -1,0 +1,74 @@
+/* src/Home/styles.css */
+#home {
+  position: relative;
+  background: url('../assets/night.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace; /* Optional: use a monospaced font for typing effect */
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+  z-index: 1;
+}
+
+#home > * {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+#home h1 {
+  font-size: 5em; /* Increase heading size */
+  margin: 0em 0;
+}
+
+#home p {
+  font-size: 2em; /* Increase paragraph size */
+  font-weight: bold;
+  max-width: 800px; /* Optional: limit paragraph width for readability */
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adds space between elements */
+  margin-top: 20px;
+}
+
+.resume-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.icon-link {
+  font-size: 32px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.icon-link:hover {
+  color: #555;
+}

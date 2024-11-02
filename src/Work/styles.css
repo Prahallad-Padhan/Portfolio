@@ -1,0 +1,78 @@
+/* src/Work/styles.css */
+
+#work {
+  position: relative;
+  background: url('../assets/night.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace; /* Optional: use a monospaced font for typing effect */
+}
+
+#work::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+  z-index: 1;
+}
+
+#work > * {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.work-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.work-card {
+  position: relative;
+  background-color: rgba(5, 5, 5, 0.715);
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.work-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Only show pointer when hovering over the image */
+}
+
+.work-image:hover {
+  transform: scale(1.1); /* Scale image on hover */
+}
+
+h2 {
+  font-size: 2.5em;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+.work-card h3 {
+  font-size: 24px;
+  margin: 10px 0 0;
+  color: whitesmoke;
+}
+
+/* Optional: remove pointer cursor from the card itself */
+.work-card:hover {
+  cursor: default; /* Make sure cursor is not a pointer when hovering over card */
+}

@@ -1,0 +1,78 @@
+/* src/Footer/styles.css */
+.footer {
+  background-color: black; /* Set background color to black */
+  height: 60vh; /* Set height to 50vh */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Start stacking from the top */
+  color: white; /* Set text color to white */
+  padding: 60px; /* Add padding */
+  text-align: center; /* Center text */
+}
+
+.footer-content {
+  display: flex; /* Flexbox for layout */
+  flex: 1; /* Allow content to grow */
+}
+
+.footer-section {
+  flex: 1; /* Equal space for each section */
+  margin: 10px; /* Space between sections */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding */
+  margin: 5px 0; /* Margin */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.contact-form button {
+  background-color: rgb(45, 45, 65); /* Button background */
+  color: #fff; /* Button text color */
+  border-radius: 10px;
+  border: none; /* Remove border */
+  padding: 10px; /* Button padding */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.contact-form button:hover {
+  background-color: #444; /* Darker background on hover */
+  color: white;
+}
+
+.sitemap ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.sitemap li {
+  margin: 5px 0; /* Space between list items */
+}
+
+.sitemap a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.sitemap a:hover {
+  color: #444; /* Optional: underline on hover */
+}
+
+.footer-bottom {
+  margin-top: auto; /* Push the copyright to the bottom */
+  padding: 10px; /* Padding */
+}
+
+.social-icons a {
+  color: white; /* Social icon color */
+  margin: 0 10px; /* Spacing between icons */
+  font-size: 1.5em; /* Icon size */
+}
+
+.social-icons a:hover {
+  color: #444; /* Social icon color */
+}
